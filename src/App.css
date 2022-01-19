@@ -1,38 +1,174 @@
-.App {
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.ui.menu.fixed {
+  height: 60px;
+  /* padding-top: 15px; */
+  border-bottom: 2px solid #E9E8E7;
+  display: flex;
+  align-items: center;
+}
+
+.app-name {
+  margin-left: 60px;
+}
+
+.grid-container {
+  padding: 40px 60px 20px 60px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.card {
+  /* border: 1px solid orange; */
+  border: 1px solid #E9E8E7;
+  box-shadow: 1px 1px 1px 0px #E9E8E7;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all .1s ease-in-out;
+}
+
+.card:hover {
+  /* margin-top: -10px; */
+  transform: translate3d(0px, -5px, 0px);
+}
+
+.card > .image {
+  border-bottom: 1px solid #E9E8E7;
+  height: 250px;
+  padding: 20px;
+  background: #fff;
+  margin: auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card > .image > img {
+  height: 100%;
+  max-width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.content {
+  padding: 10px;
+}
+
+.card > .content > .header {
+  height: 64px;
+  color: #222;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.card .meta.price {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #E5753A;
+  font-weight: 600;
+}
+
+.card .meta.category {
+  color: #98989A;
+  font-size: 14px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.card .meta.price > a {
+  font-size: 1.3rem;
+  color: #222;
+}
+
+.product-detail > .loading {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.product-detail > .grid-container {
+  padding: 0;
+  margin: 40px 60px 20px 60px;
+  border: 1px solid #D5D3D3;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.avatar {
+  /* border-right: 1px solid #D5D3D3; */
+  /* border-radius: 5px; */
+  height: 480px;
+  padding: 20px;
+  background: #fff;
+  margin: auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 916px) {
+  .avatar {
+    border-right: 1px solid #D5D3D3;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media screen and (max-width: 916px) {
+  .avatar {
+    border-bottom: 1px solid #D5D3D3;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+.avatar > img {
+  height: 100%;
+  max-width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info {
+  /* border-left: 1px solid #D5D3D3; */
+  /* border-radius: 5px; */
+  padding: 20px;
+}
+
+.info > h1 {
+  margin-bottom: 25px;
+  color: #38645B;
+}
+
+.info > h2 {
+  margin-bottom: 25px;
+}
+
+.info > h3 {
+  margin-bottom: 20px;
+  color: #B3985F;
+}
+
+.info > p {
+  line-height: 1.5em;
+  color: #797878;
+}
+
+.info__price {
+  margin-bottom: 20px;
+  background-color: #00b5ad!important;
+  border-color: #00b5ad!important;
+  color: #fff!important;
+  padding: 10px 30px 10px 30px;
+  border-radius: 5px;
+}
+
+.ui.teal.label, .ui.teal.labels .label {
+  background-color: #00b5ad!important;
+  border-color: #00b5ad!important;
+  color: #fff!important;
+  margin-bottom: 15px;
+}
+
+.ui.tag.label, .ui.tag.labels .label {
+  margin-left: 1em;
+  position: relative;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  border-radius: 0 0.28571429rem 0.28571429rem 0;
+  -webkit-transition: none;
+  transition: none;
 }
